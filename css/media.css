@@ -1,0 +1,16 @@
+@media screen and (min-width: 425px) {
+    .container {
+        max-width: 425px;
+    }
+
+    
+.open-btn-menu{
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+
+}

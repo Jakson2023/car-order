@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ekonom-pereezd</title>
+    <meta name="description" content="Економ-переїзд вантажні перевезення по Києву">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <style>
+        section {
+            display: none;
+        }
+
+        section.active {
+            display: block;
+
+        }
+    </style> -->
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container container ">
+            
+            <nav class="nav ">
+                <a href="/index.html">
+                    <img src="/images/logo.png" alt="Економ переїзд" width="100">
+                </a>
+                <div class="wrapper-nav">
+                    <h1 class="title">Економ-переїзд вантажні перевезення по Києву</h1>
+
+                    <!-- <ul class="nav-block">
+                        <li><a href="#" onclick="showContent('home')">Головна</a></li>
+                        <li><a href="#" onclick="showContent('news')">Новини</a></li>
+                        <li><a href="#" onclick="showContent('tariff')">Тарифи</a></li>
+                        <li><a href="#" onclick="showContent('contacts')">Контакти</a></li>
+                    </ul>
+                 -->
+
+                    <ul class="nav-block">
+                        <li><a href="#" onclick="showContent('home', this)" class="nav-link active">Головна</a></li>
+                        <li><a href="#" onclick="showContent('news', this)" class="nav-link">Новини</a></li>
+                        <li><a href="#" onclick="showContent('tariff', this)" class="nav-link">Тарифи</a></li>
+                        <li><a href="#" onclick="showContent('contacts', this)" class="nav-link">Контакти</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h3>Економ-переїзд</h3>
+            <button type="button" class="open-btn-menu" data-modal-open><svg width="32" height="22" class="icon-open-menu">
+                <use href="/images/InlineSprite.svg#icon-men-burger"></use>
+              </svg></button>
+            <div class="telephone">
+                <p class="text-tel"> <svg class="icon-tel" width="20" height="20">
+                        <use href="/images/InlineSprite.svg#icon-life"></use>
+                    </svg>(063) 720-73-44</p>
+                <p class="text-tel"><svg class="icon-tel" width="20" height="20">
+                        <use href="/images/InlineSprite.svg#icon-kyivstar"></use>
+                    </svg>(067) 745-00-44</p>
+                <p class="text-tel"><svg class="icon-tel" width="20" height="20">
+                        <use href="/images/InlineSprite.svg#icon-voda"></use>
+                    </svg>(050) 277-41-20</p>
+            </div>
+
+           
+        </div>
+
+        
+        <!-- mob-menu -->
+
+        <div class="backdrop is-hidden" data-modal>
+            
+            
+              
+                <button type="button" class="close-btn-menu" data-modal-close><svg width="8" height="8"
+                    class="icon-close-menu">
+                    <use href="/images/InlineSprite.svg#icon-close-cross"></use>
+                  </svg></button>
+                  <!-- <ul class="nav-block-mobile">
+                    <li class="nav-mobile"><a href="#" onclick="showContent('home', this)" class="nav-link active">Головна</a></li>
+                    <li class="nav-mobile"><a href="#" onclick="showContent('news', this)" class="nav-link">Новини</a></li>
+                    <li class="nav-mobile"><a href="#" onclick="showContent('tariff', this)" class="nav-link">Тарифи</a></li>
+                    <li class="nav-mobile"><a href="#" onclick="showContent('contacts', this)" class="nav-link">Контакти</a></li>
+                </ul> -->
+
+
+                <h3 class="title-modal">Наші контакти та тарифи</h3>
+                <div class="telephone-modal">
+                    <p class="text-tel-modal"> <svg class="icon-tel" width="20" height="20">
+                            <use href="/images/InlineSprite.svg#icon-life"></use>
+                        </svg>(063) 720-73-44</p>
+                    <p class="text-tel-modal"><svg class="icon-tel" width="20" height="20">
+                            <use href="/images/InlineSprite.svg#icon-kyivstar"></use>
+                        </svg>(067) 745-00-44</p>
+                    <p class="text-tel-modal"><svg class="icon-tel" width="20" height="20">
+                            <use href="/images/InlineSprite.svg#icon-voda"></use>
+                        </svg>(050) 277-41-20</p>
+                </div>
+
+                <div class="tariff-card-wrap">
+                <img class="img-mobile" src="/images/mini.png">
+                
+                <ul class="tariff-card">
+                    <li class="tariff-item"> <p>подача</p><p>200грн</p></li>
+                    <li class="tariff-item"> <p>година роботи</p><p>200грн/год</p></li>
+                    <li class="tariff-item"> <p>мін замовлення</p><p>2години по Києву+подача</p></li>
+                    <li class="tariff-item"> <p>виїзд за київ</p><p>11грн/км кругорейс</p></li>
+                </ul>
+                <h3>характеристики авто</h3>
+                <ul class="tariff-card">
+                    <li class="tariff-item"> <p>об'єм</p><p>до 5,5 м.куб</p></li>
+                    <li class="tariff-item"> <p>довжина</p><p>2,4м</p></li>
+                    <li class="tariff-item"> <p>ширина</p><p>1.50 м</p></li>
+                    <li class="tariff-item"> <p>висота</p><p> 1.50м</p></li>
+                </ul>
+                <p>1 пасажирське місце</p>
+            </div>
+
+            <div class="tariff-card-wrap">
+                <img class="img-mobile" src="/images/gazel.png">
+                <ul class="tariff-card">
+                    <li class="tariff-item"> <p>подача</p><p>300грн</p></li>
+                    <li class="tariff-item"> <p>година роботи</p><p>300грн/год</p></li>
+                    <li class="tariff-item"> <p>мін замовлення</p><p>2години по Києву+подача</p></li>
+                    <li class="tariff-item"> <p>виїзд за київ</p><p>15грн/км кругорейс</p></li>
+                </ul>
+                <h3>характеристики авто</h3>
+                
+                <ul class="tariff-card">
+                    <li class="tariff-item"> <p>об'єм</p><p>18 м.куб</p></li>
+                    <li class="tariff-item"> <p>довжина</p><p>4,10 м</p></li>
+                    <li class="tariff-item"> <p>ширина</p><p>2 м</p></li>
+                    <li class="tariff-item"> <p>висота</p><p>2,20 м</p></li>
+                </ul>
+                <p>вантажопідйомність – до 1,5 тн</p>
+            </div>
+            <div class="tariff-card-wrap">
+                <img class="img-mobile" src="/images/mers.png">
+                <ul class="tariff-card">
+                    <li class="tariff-item"> <p>подача</p><p>500грн</p></li>
+                    <li class="tariff-item"> <p>година роботи</p><p>500грн/год</p></li>
+                    <li class="tariff-item"> <p>мін замовлення</p><p>3 години+подача</p></li>
+                    <li class="tariff-item"> <p>виїзд за київ</p><p>25грн/км кругорейс</p></li>
+                </ul>
+                
+                <h3>характеристики авто</h3>
+                <ul class="tariff-card">
+                    <li class="tariff-item"> <p>об'єм</p><p>32-42 м.куб</p></li>
+                    <li class="tariff-item"> <p>довжина</p><p>5,2 м</p></li>
+                    <li class="tariff-item"> <p>ширина</p><p>2,40 м</p></li>
+                    <li class="tariff-item"> <p>висота</p><p>2,20 м</p></li>
+                    </ul>
+                <p>вантажопідйомність – до 5 тн, гідроборт, перепустка в центральну частину Києва</p>
+                
+            </div>
+              <!-- <div class="soc-contacts-wrap">
+                <div class="telephone">
+                    <p class="text-tel"> <svg class="icon-tel" width="20" height="20">
+                            <use href="/images/InlineSprite.svg#icon-life"></use>
+                        </svg>(063) 720-73-44</p>
+                    <p class="text-tel"><svg class="icon-tel" width="20" height="20">
+                            <use href="/images/InlineSprite.svg#icon-kyivstar"></use>
+                        </svg>(067) 745-00-44</p>
+                    <p class="text-tel"><svg class="icon-tel" width="20" height="20">
+                            <use href="/images/InlineSprite.svg#icon-voda"></use>
+                        </svg>(050) 277-41-20</p>
+                </div>
+      
+                
+              </div> -->
+            
+      
+          </div>
+
+    </header>
+    <main class="container">
+
+        <section id="home" class="home active">
+
+            <div class="home-container">
+                <div class="motto-wrapper">
+                    <p class="motto-top">МИ ВАНТАЖИМО І ПЕРЕВОЗИМО –
+                        ВИ ЕКОНОМИТЕ!
+                    </p>
+
+                    <p class="motto-bottom">
+                        Машина
+                        від 130 грн/год!</p>
+                </div>
+
+
+
+                <img class="img-motto" src="/images/title-img.webp" alt="" width="400">
+            </div>
+            <h3 class="our-services">Наші послуги</h3>
+            <ul class="services">
+                <li class="card-services">
+                    <div class="icon">
+                        <img  src="/images/gruz-perevoz.webp" alt="">
+                    </div>
+                    <h3 class="main-item">Вантажоперевезення</h3>
+                    <p class="description-services">
+                        Ми пропонуємо вантажні перевезення, ціна та якість яких вас задовольнять. Зверніться до нас, і
+                        ми виконаємо вантажні перевезення недорого, швидко, якісно та професійно.
+                </li>
+                <li class="card-services">
+                    <div class="icon">
+                        <img src="/images/gruz-taxi.webp" alt="">
+                    </div>
+                    <h3 class="main-item">Вантажне таксі</h3>
+                    <p class="description-services">
+                        Далеко не все можна помістити до легкового автомобіля. У багатьох випадках доводиться викликати
+                        вантажне таксі.
+                    </p>
+                </li>
+                <li class="card-services">
+                    <div class="icon">
+                        <img src="/images/kvartir.webp" alt="">
+                    </div>
+                    <h3 class="main-item">Квартирний переїзд</h3>
+                    <p class="description-services">
+                        Компанія "Економ-переїзд" якісно й оперативно реалізує для вас квартирний переїзд. При цьому ми
+                        гарантуємо неухильне дотримання термінів і неушкодженість вашого майна.
+                    </p>
+                </li>
+                <li class="card-services">
+                    <div class="icon">
+                        <img src="/images/office.webp" alt="">
+                    </div>
+                    <h3 class="main-item">Офісний переїзд</h3>
+                    <p class="description-services">
+                        Звертайтеся до спеціалізованої транспортної компанії "Економ-переїзд", фахівцям якої добре
+                        відомо, як саме здійснюється успішний офісний переїзд. Вони зможуть вам допомогти переїхати до
+                        нового офісу швидко, безпечно і без клопотів для вас. Вдалого вам переїзду!
+                    </p>
+                </li>
+                <li class="card-services">
+                    <div class="icon">
+                        <img src="/images/mebel.webp" alt="">
+                    </div>
+                    <h3 class="main-item">Перевезення меблів</h3>
+                    <p class="description-services">
+                        Research and confirm brands that present the strongest digital growth opportunities and minimize
+                        risk.
+                    </p>
+                </li>
+                <li class="card-services">
+                    <div class="icon">
+                        <img src="/images/gruzchik.webp" alt="">
+                    </div>
+                    <h3 class="main-item">Вантажники</h3>
+                    <p class="description-services">
+                        Отож, на вас чекає така приємна подія, як переїзд, але ви ще не вирішили проблему з перевезенням
+                        вантажу? Тоді до ваших послуг наші висококваліфіковані вантажники!
+                    </p>
+                </li>
+            </ul>
+            <h3 class="help-phone">Якщо не знайшли потрібну послугу - зателефонуйте і ми Вам допоможемо!</h3>
+            <ul class="work">
+
+                <li class="work-item">
+                    <svg class="icon-work" width="40" height="40">
+                        <use href="/images/InlineSprite.svg#icon-phone"></use>
+                    </svg>
+                    <p class="work-text">Зателефонуйте нам і ми назвемо точну вартість перевезення</p>
+                    <div class="arrow-container">
+                        <svg class="icon-arrow" width="40" height="40">
+                            <use href="/images/InlineSprite.svg#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="work-item">
+                    <svg class="icon-work" width="40" height="40">
+                        <use href="/images/InlineSprite.svg#icon-hour-glass"></use>
+                    </svg>
+                    <p class="work-text">Автомобіль приїжджає протягом 15хв та забирає вантаж</p>
+                    <div class="arrow-container">
+                        <svg class="icon-arrow" width="40" height="40">
+                            <use href="/images/InlineSprite.svg#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="work-item">
+                    <svg class="icon-work" width="40" height="40">
+                        <use href="/images/InlineSprite.svg#icon-clipboard"></use>
+                    </svg>
+                    <p class="work-text">При необхідності ми не лише виконаємо вантажно-розвантажувальні роботи, але й
+                        також розберемо та зберемо меблі</p>
+                    <div class="arrow-container">
+                        <svg class="icon-arrow" width="40" height="40">
+                            <use href="/images/InlineSprite.svg#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="work-item">
+                    <svg class="icon-work" width="40" height="40">
+                        <use href="/images/InlineSprite.svg#icon-truck"></use>
+                    </svg>
+                    <p class="work-text">Доставимо вантаж максимально швидко</p>
+                    <div class="arrow-container">
+                        <svg class="icon-arrow" width="40" height="40">
+                            <use href="/images/InlineSprite.svg#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="work-item">
+                    <svg class="icon-work" width="40" height="40">
+                        <use href="/images/InlineSprite.svg#icon-home"></use>
+                    </svg>
+                    <p class="work-text">І лише після доставки ви оплачуєте перевезення</p>
+
+                </li>
+            </ul>
+            <h3 class="help-phone">Наші переваги</h3>
+
+            <ul class="advantages">
+                <li class="advantages-item">
+                    <p>Ми оголошуємо точну вартість ще до початку перевезення і вона не змінюється. Ми працюємо чесно!
+                    </p>
+
+                </li>
+                <li class="advantages-item">
+                    <p>Меблі та побутова техніка закріплюється спеціальними ременями і не пошкоджується при перевезенні
+                    </p>
+
+                </li>
+                <li class="advantages-item">
+                    <p>В нас охайні та вічливі вантажники та водії. Ви будете приємно здивовані</p>
+
+                </li>
+                <li class="advantages-item">
+                    <p>Ми несемо відповідальність за ваш вантаж і доставимо його неушкодженим</p>
+
+                </li>
+                <li class="advantages-item">
+                    <p>В нас є автомобілі різного формату. Поміститься все!</p>
+
+                </li>
+
+            </ul>
+
+        </section>
+        <section id="news" class="news"> NEWS </section>
+        <section id="tariff" class="tariff">
+            <h1>Вантажні перевезення Київ - у нас завжди вигідні ціни та актуальні тарифи</h1>
+            <table id="tariffs">
+                <tbody>
+                    <tr class="orang">
+                        <td class="auto">
+                            Авто</td>
+                        <td class="podac">
+                            Подача</td>
+                        <td class="chr">
+                            Година роботи (Київ)</td>
+                        <td class="minz">
+                            Мін. замовлення (Київ)</td>
+                        <td class="viezd">
+                            Виїзд за Київ</td>
+                    </tr>
+                    <tr>
+                        <td class="auto">
+                            Мікроавтобус міні<br>
+                            <img src="/images/mini.png">
+                        </td>
+                        <td class="podac">
+                            200 грн</td>
+                        <td class="chr">
+                            200 грн/год</td>
+                        <td class="minz">
+                            2 години роботи по Києву + подача=600 грн</td>
+                        <td class="viezd">
+                            11 грн/км<br>
+                            кругорейс</td>
+                    </tr>
+                    <tr>
+                        <td class="niz" colspan="5">
+                            об'єм кузова – до 5,5 м.куб; довжина – 2,4 м; ширина – 1.50 м; висота – 1.50 м; 1
+                            пасажирське місце</td>
+                    </tr>
+                    <tr>
+                        <td class="auto">
+                            Газель подовжена<br>
+                            <img src="/images/gazel.png">
+                        </td>
+                        <td class="podac">
+                            300 грн</td>
+                        <td class="chr">
+                            300 грн/год</td>
+                        <td class="minz">
+                            2 години + подача=900 грн</td>
+                        <td class="viezd">
+                            15 грн/км<br>
+                            кругорейс</td>
+                    </tr>
+                    <tr>
+                        <td class="niz" colspan="5">
+                            об'єм кузова – 18 м.куб; довжина – 4,10 м; ширина – 2 м; висота – 2,20 м; вантажопідйомність
+                            – до 1,5 тн</td>
+                    </tr>
+                    <tr>
+                        <td class="auto">
+                            Мерседес<br>
+                            <img src="/images/mers.png">
+                        </td>
+                        <td class="podac">
+                            500 грн</td>
+                        <td class="chr">
+                            500 грн/год</td>
+                        <td class="minz">
+                            мінімальне замовлення авто 3 години+подача=2000 грн</td>
+                        <td class="viezd">
+                            25 грн/км кругорейс</td>
+                    </tr>
+                    <tr>
+                        <td class="niz" colspan="5">
+                            об'єм&nbsp;кузова – 32-42 м.куб; довжина – 5,2 м; ширина – 2,40 м; висота – 2,20 м;
+                            вантажопідйомність – до 5 тн, гідроборт, перепустка в центральну частину Києва<br>
+                            &nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+        <section id="contacts" class="contacts">
+            (063) 720-73-44
+            (067) 745-00-44
+            (050) 277-41-20
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-container container ">
+
+
+            <div class="footer-description">
+                <h3 class="footer-title">Економ-переїзд Вантажні перевезення по Києву</h1>
+                    <p class="footer-text-desc">Оберіть нас для швидкості, безпеки та доступних цін. Ваш переїзд - наша відповідальність!</p>
+            </div>
+            <div class="telephone-footer">
+                <h3 class="title-footer-tel">Наші контакти</h3>
+                <p class="text-tel-footer"> <svg class="icon-tel" width="20" height="20">
+                        <use href="/images/InlineSprite.svg#icon-life"></use>
+                    </svg>(063) 720-73-44</p>
+                <p class="text-tel-modal"><svg class="icon-tel" width="20" height="20">
+                        <use href="/images/InlineSprite.svg#icon-kyivstar"></use>
+                    </svg>(067) 745-00-44</p>
+                <p class="text-tel-modal"><svg class="icon-tel" width="20" height="20">
+                        <use href="/images/InlineSprite.svg#icon-voda"></use>
+                    </svg>(050) 277-41-20</p>
+            </div>
+            <div class="footer-social">
+               
+                
+                <ul class="footer-soc-list">
+                    <li class="footer-soc-item "><a href="" class="footer-soc-link link"><svg width="30" height="30"
+                                class="footer-soc-icon">
+                                <use href="/images/InlineSprite.svg#icon-instagram"></use>
+                            </svg></a></li>
+                    <li class="footer-soc-item "><a href="" class="footer-soc-link link"><svg width="30" height="30"
+                                class="footer-soc-icon">
+                                <use href="/images/InlineSprite.svg#icon-twitter"></use>
+                            </svg></a></li>
+                    <li class="footer-soc-item "><a href="" class="footer-soc-link link"><svg width="30" height="30"
+                                class="footer-soc-icon">
+                                <use href="/images/InlineSprite.svg#icon-facebook"></use>
+                            </svg></a></li>
+                    <li class="footer-soc-item "><a href="" class="footer-soc-link link"><svg width="30" height="30"
+                                class="footer-soc-icon">
+                                <use href="/images/InlineSprite.svg#icon-linkedin"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+
+
+
+
+        </div>
+    </footer>
+
+
+
+    <script src="/js/script.js"></script>
+    <script src="/js/mob-menu.js"></script>
+</body>
+
+</html>
