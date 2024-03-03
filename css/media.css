@@ -1,7 +1,7 @@
 @media screen and (min-width: 425px) {
-    .container {
+    /* .container {
         max-width: 425px;
-    }
+    } */
 
     
 .open-btn-menu{
@@ -12,5 +12,142 @@
 
 
 
+
+}
+@media screen and (min-width: 768px){
+    .container {
+        max-width: 768px;
+    }
+
+.nav {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.wrapper-nav {
+    display: block;
+    width: 400px;
+  }
+
+  .title-mob{
+    display: none;
+  }
+
+  .open-btn-menu {
+    display: none;
+  }
+
+.telephone {
+    display: block;
+  }
+
+.backdrop{
+    display: none;
+}
+.tariff-card-wrap {
+    display: none;
+}
+
+.img-motto{
+    display: block;
+  }
+.home-container{
+    display: flex;
+    height: unset;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+.card-services {
+    margin-left: unset;
+    margin-right: unset;
+}
+
+.help-phone {
+    width: 400px;
+}
+
+.work {
+    flex-direction: unset;
+    align-items: unset;
+}
+
+.footer-container{
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 24px;
+  }
+
+.footer-description {
+    
+    margin-bottom: unset;
+  }
+
+}
+
+@media screen and (min-width: 1440px){
+    .container {
+        max-width: 1440px;
+    }
+
+    .nav {
+        width: 1200px;
+      }
+
+      .wrapper-nav {
+        margin-left: auto;
+        margin-right: auto;
+        width: unset;
+      }
+
+
+      .services {
+        
+        flex-wrap: nowrap;
+        
+    }
+
+    .card-services{
+        flex-basis: 100%;
+    }
+
+    
+
+    .work {
+        justify-content: center;
+        gap: 52px;
+    }
+
+    .work-text {
+        
+        font-size: 14px;
+        
+      }
+
+    .work-item {
+       
+        width: 180px;
+        padding: 10px;
+      }
+
+    .icon-arrow {
+        display: block;
+        
+      }
+      .advantages {
+        flex-wrap: nowrap;
+        margin-top: 40px;
+        margin-bottom: 80px;
+      }
+
+      .footer-container{
+        justify-content: space-around;
+      }
 
 }

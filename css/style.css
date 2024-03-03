@@ -39,7 +39,7 @@ section.active {
 }
 
 .container {
-  /* max-width: 325px; */
+  max-width: 325px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -101,9 +101,9 @@ section.active {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  justify-content: center;
+  
   margin-top: 10px;
-  padding: 6px;
+  
   
 
 }
@@ -154,9 +154,20 @@ table {
 
 .tariff {
 
-  width: 800px;
+  /* width: 800px; */
   margin: 0 auto;
 }
+.tariffs {
+  text-align: center;
+}
+.title-tariffs{
+margin-bottom: 10px;
+
+}
+
+/* .table-item {
+  margin-bottom: 10px;
+} */
 
 .auto {
   font-weight: bold;
@@ -164,7 +175,7 @@ table {
 }
 
 .niz {
-  padding: 5px 0 10px 0;
+  padding: 10px;
   background-color: #f6d3c1;
   margin-bottom: 20px;
 }
@@ -227,10 +238,11 @@ display: inline-block;
 }
 
 
-/* .services {
-  display: flex;
-  gap: 16px;
-} */
+.services {
+        
+  margin-bottom: 40px;
+  
+}
 
 
 
@@ -270,8 +282,7 @@ margin-bottom: 10px;
 }
 
 .help-phone {
-  margin: 80px auto 40px;
-  /* width: 400px; */
+  margin: auto;
   padding: 20px;
   background-color: antiquewhite;
   border-radius: 8px;
@@ -283,6 +294,8 @@ text-align: center;
   gap: 24px;
 flex-direction: column;
 align-items: center;
+margin-bottom: 80px;
+margin-top: 80px;
   /* justify-content: center; */
   /* margin-bottom: 80px; */
 }
@@ -332,6 +345,7 @@ align-items: center;
   gap: 18px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 40px;
   /* width: 800px; */
   /* margin: 80px auto 40px; */
 }
